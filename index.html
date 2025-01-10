@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Resturant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="container-fluid bg-warning rounded-pill">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div
+                                class="navtop px-3 py-2 d-flex flex-column flex-md-row gap-3 gap-md-5 text-white justify-content-center justify-content-md-evenly fs-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-square-phone fs-4"></i>
+                                    <span>+1 5589 55488 55</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-clock fs-4"></i>
+                                    <span>Mon-Sat: 11:00 AM - 23:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid customNav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <nav class="navbar navbar-expand-lg customNavbar">
+                        <a href="#home" class="navbar-brand fs-2">Delicious</a>
+
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav-home">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="d-lg-block d-none ms-auto">
+                            <ul class="nav navbar-nav gap-3"> <!--border border-5-->
+                                <li class="nav-item">
+                                    <a class="nav-link icon-link icon-link-hover" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="About.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Menu.html">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Special.html">Specials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Chef.html">Chef</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Gallery.html">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="BookTable.html" class="text-decoration-none">
+                                        <button class="btn btn-warning rounded-pill px-3">
+                                            Book A Table
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Desktop Navbar End -->
+
+                        <!-- Mobile Navbar Offcanvas Start-->
+
+                        <div class="offcanvas offcanvas-end d-lg-none d-block" id="nav-home" data-bs-backdrop="false">
+                            <div class="offcanvas-header">
+                                <button class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="About.html" class="nav-link">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Menu.html" class="nav-link">Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Special.html" class="nav-link">Special</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Chef.html" class="nav-link">Chef</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Gallery.html" class="nav-link">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Contact.html" class="nav-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Mobile Navbar End -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Carousel Area Start ==============================================-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 ">
+               
+                <div class="carousel slide" data-bs-ride="carousel" id="abc">
+                    <div class="carousel-indicators">
+                        <button data-bs-slide-to="0" data-bs-target="#abc" class="active customIndicators" aria-label="Slide 1"></button>
+                        <button class="customIndicators" data-bs-slide-to="1" data-bs-target="#abc" aria-label="Slide 2"></button>
+                        <button class="customIndicators" data-bs-slide-to="2" data-bs-target="#abc" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner  ">
+                        <div class="carousel-item active top-carousel"
+                            style="background-image: url(../Icon&photo/slide-1.jpg);" data-bs-interval="2000">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2 class="mb-3 fs-1">
+                                        <span>Delicious</span>
+                                        Restaurant
+                                    </h2>
+                                    <p>Ut velit est quam
+                                        dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat
+                                        sequi nihil ut aliquam. <br> Occaecati alias dolorem mollitia ut.
+                                        Similique ea voluptatem. Esse doloremque accusamus
+                                        repellendus deleniti vel. Minus et tempore modi architecto.
+                                    </p>
+
+                                    <div class="mt-4">
+                                        <a class="btn btn-outline-warning  me-2 btn-lg rounded-pill"
+                                            href="Menu.html">Our
+                                            Menu</a>
+                                        <a class="btn btn-outline-warning btn-lg rounded-pill mt-2 mt-md-0 mt-lg-0"
+                                            href="BookTable.html">Book A
+                                            Table</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item  top-carousel"
+                            style="background-image: url(../Icon&photo/slide-2.jpg);" data-bs-interval="2000">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2 class="mb-3 fs-1">
+                                        Lorem Ipsum Dolor
+                                    </h2>
+                                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                                        et est quaerat sequi nihil ut aliquam. <br> Occaecati alias
+                                        dolorem mollitia ut. Similique ea voluptatem. Esse
+                                        doloremque accusamus repellendus deleniti vel. Minus et
+                                        tempore modi architecto.</p>
+                                    <div class="btn2 mt-4">
+                                        <a class="btn btn-outline-warning me-2 btn-lg rounded-pill" href="Menu.html">Our
+                                            Menu</a>
+                                        <a class="btn btn-outline-warning mt-2  btn-lg rounded-pill mt-md-0  mt-lg-0"
+                                            href="BookTable.html">Book A
+                                            Table</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item top-carousel"
+                            style="background-image: url(../Icon&photo/slide-3.jpg);" data-bs-interval="2000">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2 class="mb-3 fs-1">
+                                        Sequi ea ut et est quaerat
+                                    </h2>
+                                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                                        et est quaerat sequi nihil ut aliquam. <br> Occaecati alias
+                                        dolorem mollitia ut. Similique ea voluptatem. Esse
+                                        doloremque accusamus repellendus deleniti vel. Minus et
+                                        tempore modi architecto.</p>
+                                    <div class=" mt-4">
+                                        <a class="btn btn-outline-warning me-2 btn-lg rounded-pill "
+                                            href="Menu.html">Our
+                                            Menu</a>
+                                        <a class="btn btn-outline-warning mt-2 btn-lg rounded-pill mt-md-0 mt-lg-0"
+                                            href="BookTable.html">Book
+                                            A Table</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button data-bs-slide="prev" type="button" data-bs-target="#abc" class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button data-bs-slide="next" type="button" data-bs-target="#abc" class="carousel-control-next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Area Start Here ===============================================-->
+
+    <main>
+        <div class="container-fluid mt-5">
+            <div class="container">
+                <div class="row rows">
+                    <div class="col-lg-6 d-flex align-items-stretch">
+                        <div class="about-video  w-100">
+                            <iframe class="w-100 h-100" style="background-position: center; "
+                                src="https://www.youtube.com/embed/_dui6BUmMBg?si=PLOQFr32ce6AyI3u"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4 mt-lg-0 d-flex align-items-stretch"
+                        style="background-color: rgb(14,25,39);">
+                        <div class="about-content px-3 py-5 text-white ">
+                            <h2>Eum ipsam laborum deleniti <span style="color: grey;">velit pariatur
+                                    architecto
+                                    aut nihil</span></h2>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Duis aute irure
+                                dolor in
+                                reprehenderit </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+
+
+                            <ol type="A">
+                                <li class="mb-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </li>
+                                <li class="mb-2">Duis aute irure dolor in reprehenderit in voluptate velit.
+                                </li>
+                                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure
+                                    dolor in reprehenderit in voluptate trideta storacalaperda
+                                    mastiro
+                                    dolore eu fugiat nulla pariatur.</li>
+                            </ol>
+
+                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui
+                                officia deserunt mollit anim id est laborum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Why Choose Area Start ====================================================== -->
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="why-choose mx-auto">
+                        <h2 class="text-center fs-1">Why Choose <span style="color:rgb(255,176,59);">Our
+                                Restaurant</span>
+                        </h2>
+                        <p class="mt-4 text-center">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+                            adipisci <br> expedita at voluptas atque vitae autem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="box1 shadow px-4 py-5 rounded">
+                        <h5>01</h5>
+                        <h3>Lorem ipsum.</h3>
+                        <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur
+                            ducimus vero placeat</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-3 mt-lg-0">
+                    <div class="box2 shadow px-4 py-5 rounded">
+                        <h5>02</h5>
+                        <h3>Repellat Nihil</h3>
+                        <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor
+                            quod et vel dire leno para dest</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-3 mt-lg-0">
+                    <div class="box3 shadow px-4 py-5 rounded">
+                        <h5>03</h5>
+                        <h3>Ad ad velit qui</h3>
+                        <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt
+                            debitis quo vel nam quis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Why Choose Area End ================================================= -->
+
+
+        <!-- Menu Area Start ===================================================== -->
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="check-menu mt-5">
+                        <h3 class="text-center fs-1 mb-4">Chech Our Tasty <span
+                                style="color: rgb(255,176,59);">Menu</span>
+                        </h3>
+                        <div>
+                            <div class="menu-btn text-center mt-4">
+                                <div class="btn btn-warning rounded-pill px-5 ">Show All</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 text-center text-md-center text-lg-start">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5><span class="text-warning">Lobster
+                                    Bisque</span>..................................
+                                $5.95</h5>
+                            <h6 class="text-secondary fw-lighter">Lorem, deren, trataro, filede, nerada</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Crab
+                                    Cake</span>.............................
+                                $7.95</h5>
+                            <h6 class="text-secondary fw-lighter">A delicate crab cake served on a toasted roll
+                                with lettuce and tartar sauce</h6>
+                        </li>
+
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Tuscan
+                                    Grilled</span>........................
+                                $9.95</h5>
+                            <h6 class="text-secondary fw-light">Grilled chicken with provolone, artichoke
+                                hearts, and roasted red pesto</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Greek
+                                    Salad</span>.........................
+                                $9.95</h5>
+                            <h6 class="text-secondary fw-lighter">Fresh spinach, crisp romaine, tomatoes, and
+                                Greek olives</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Lobster
+                                    Roll</span>.............................
+                                $12.95</h5>
+                            <h6 class="text-secondary fw-lighter">Plump lobster meat, mayo and crisp lettuce on
+                                a toasted bulky roll</h6>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 text-center text-md-center text-lg-start">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h5><span class="text-warning">Bread
+                                    barrel</span>......................
+                                $6.95</h5>
+                            <h6 class="text-secondary fw-lighter">Lorem, deren, trataro, filede, nerada</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Caesar
+                                    Selections</span>......................
+                                $8.95</h5>
+                            <h6 class="text-secondary fw-lighter">Lorem, deren, trataro, filede, nerada</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Mozzarella
+                                    Stick</span>...........................$4.95
+                            </h5>
+                            <h6 class="text-secondary fw-lighter">Lorem, deren, trataro, filede, nerada</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Spinach
+                                    Salad</span>..........................................$9.95
+                            </h5>
+                            <h6 class="text-secondary fw-lighter">Fresh spinach with mushrooms, hard boiled egg,
+                                and warm bacon vinaigrette</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Bruschetta</span>..........................$91.45
+                            </h5>
+                            <h6 class="text-secondary fw-lighter">Fresh mushrooms,
+                                and warm bacon vinaigrette</h6>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 text-center text-md-center text-lg-start">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h5><span class="text-warning">Grilled Chicken Alfredo</span>......................
+                                $6.95</h5>
+                            <h6 class="text-secondary fw-lighter">Chicken breast, fettuccine, Alfredo sauce, Parmesan
+                            </h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Vegetable Stir Fry </span>......................
+                                $14.29</h5>
+                            <h6 class="text-secondary fw-lighter">Broccoli, bell peppers, carrots, soy sauce, tofu</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Salmon
+                                    Teriyaki</span>.............................$4.95
+                            </h5>
+                            <h6 class="text-secondary fw-lighter">Salmon fillet, teriyaki sauce, sesame seeds, rice</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Tiramisu</span>......................$9.95
+                            </h5>
+                            <h6 class="text-secondary fw-lighter">Mascarpone, espresso, ladyfingers, cocoa powder</h6>
+                        </li>
+
+                        <li class="mt-3 mt-lg-4">
+                            <h5><span class="text-warning">Garlic Butter
+                                    Shrimp</span>..................................$19.92
+                            </h5>
+                            <h6 class="text-secondary fw-lighter">Shrimp, garlic, butter, lemon, parsley</h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Area End Here ============================================================== -->
+
+
+        <!-- Special Area Start Start ======================================================= -->
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="check-specials">
+                        <div class="special text-center ">
+                            <h3 class="text-center fs-1">Check Our <span style="color:rgb(255,176,59) ;">Specials</span>
+                            </h3>
+                            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at
+                                <br>
+                                voluptas atque vitae autem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <div class="shadow rounded-2 text-center px-3 py-4">
+                            <div>
+                                <h3>Modi sit est</h3>
+                            </div>
+
+                            <div>
+                                <h3>Architecto ut aperiam autem id</h3>
+                                <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
+                                    videna mareta paulona marka Et nobis maiores eius. Voluptatibus ut enim blanditiis
+                                    atque
+                                    harum sint. Laborum
+                                    eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat
+                                    minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui
+                                    similique accusamus nostrum rem vero </p>
+                            </div>
+
+                            <div>
+                                <img class="img-fluid" src="../Icon&photo/Plate.png" alt="Food On Plate" width="20%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="shadow rounded-2 px-3 py-4 text-center mt-4 mt-lg-0">
+                            <div>
+                                <h3>Unde praesentium sed</h3>
+                            </div>
+
+                            <div>
+                                <h3>Et blanditiis nemo veritatis excepturi</h3>
+                                Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
+                                videna mareta paulona marka Ea ipsum voluptatem consequatur quis est. Illum error ullam
+                                omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et
+                                velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna
+                                desera vafle de nideran pal</p>
+                            </div>
+
+                            <div>
+                                <img class="img-fluid" src="../Icon&photo/veg plate.jpg" alt="Food On Plate"
+                                    width="20%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Special Area End Here ================================================================ -->
+
+
+        <!-- 2nd carousel Start Here ===================================================== -->
+
+        <div class="container-fluid mt-5 df justify-content-center align-items-center" style="height: 100vh;">
+            <div class="bg-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex align-items-center justify-content-center mt-5 py-5">
+                                            <div class="col-lg-5">
+                                                <img class="img-fluid" src="../Icon&photo/event-birthday.jpg"
+                                                    alt="Birthday Party">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="birthday-content text-white ms-5">
+                                                    <h5 class="text-warning">Birthday Parties</h5>
+                                                    <a class=" text-decoration-underline  fs-4" href="#">$189</a>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                                                        officiis
+                                                        non voluptatum cum facilis, porro maiores temporibus voluptates,
+                                                        quasi
+                                                        suscipit quibusdam. Recusandae, est molestiae neque, veniam non
+                                                        cumque
+                                                        id eligendi dignissimos, laboriosam quis aut repellat! Beatae
+                                                        ducimus
+                                                        repudiandae consequatur nemo?</p>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                    </ul>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Reprehenderit
+                                                        alias totam illo vero distinctio, quam reiciendis earum. Ducimus
+                                                        corporis error magni quos?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="carousel-item">
+                                        <div class="d-flex align-items-center justify-content-center mt-5  py-5">
+                                            <div class="col-lg-5">
+                                                <img class="img-fluid" src="../Icon&photo/event-private.jpg"
+                                                    alt="Private Party">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="birthday-content text-white ms-5">
+                                                    <h5 class="text-warning">Private Parties</h5>
+                                                    <a class=" text-decoration-underline  fs-4" href="#">$444</a>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                                                        officiis
+                                                        non voluptatum cum facilis, porro maiores temporibus voluptates,
+                                                        quasi
+                                                        suscipit quibusdam. Recusandae, est molestiae neque, veniam non
+                                                        cumque
+                                                        id eligendi dignissimos, laboriosam quis aut repellat! Beatae
+                                                        ducimus
+                                                        repudiandae consequatur nemo?</p>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                    </ul>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Reprehenderit
+                                                        alias totam illo vero distinctio, quam reiciendis earum. Ducimus
+                                                        corporis error magni quos?</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="carousel-item">
+                                        <div class="d-flex align-items-center justify-content-center mt-5  py-5">
+                                            <div class="col-lg-5">
+                                                <img class="img-fluid" src="../Icon&photo/event-custom.jpg"
+                                                    alt="Custom Party">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="birthday-content text-white ms-5">
+                                                    <h5 class="text-warning">Custom Parties</h5>
+                                                    <a class=" text-decoration-underline  fs-4" href="#">$299</a>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                                                        officiis
+                                                        non voluptatum cum facilis, porro maiores temporibus voluptates,
+                                                        quasi
+                                                        suscipit quibusdam. Recusandae, est molestiae neque, veniam non
+                                                        cumque
+                                                        id eligendi dignissimos, laboriosam quis aut repellat! Beatae
+                                                        ducimus
+                                                        repudiandae consequatur nemo?</p>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-solid fa-check-double text-warning"></i>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Sunt odit
+                                                            dolores aliquam?
+                                                        </li>
+                                                    </ul>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Reprehenderit
+                                                        alias totam illo vero distinctio, quam reiciendis earum. Ducimus
+                                                        corporis error magni quos?</p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd carousel End Here ===================================================== -->
+
+        <!-- Gallery/Photos Area Start Here ================================================ -->
+
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-lg-12">
+
+                    <div class="gallery mt-5">
+                        <div class="gallery-title text-center">
+                            <h4 class="fs-1"> Some Photos From <span style="color: rgb(255,176,59);">Our
+                                    Restaurant </span></h4>
+                            <p>Ut possimus qui ut temporibus culpa velit eveniet modi
+                                omnis
+                                est adipisci <br> expedita at voluptas atque vitae autem.</p>
+                        </div>
+
+                        <div class="gallery-photos">
+                            <div class="row">
+
+                                <div class="col-lg-3 p-1">
+                                    <img class="gallery-img1" width="100%" src="../Icon&photo/gallery-1.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 p-1">
+                                    <img class="gallery-img2" width="100%" src="../Icon&photo/gallery-2.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 p-1">
+                                    <img class="gallery-img3" width="100%" src="../Icon&photo/gallery-3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 p-1">
+                                    <img class="gallery-img4" width="100%" src="../Icon&photo/gallery-4.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 p-1">
+                                    <img class="gallery-img5" width="100%" src="../Icon&photo/gallery-5.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 p-1">
+                                    <img class="gallery-img6" width="100%" src="../Icon&photo/gallery-6.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 p-1">
+                                    <img class="gallery-img7" width="100%" src="../Icon&photo/gallery-7.jpg" alt="">
+                                </div>
+                                <div class="col-lg-3 p-1">
+                                    <img class="gallery-img8" width="100%" src="../Icon&photo/gallery-8.jpg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery/Photos Area End Here ================================================ -->
+
+
+        <!-- Professional Chef Area Start =============================================== -->
+
+        <div class="container-fluid mt-5 box"
+            style=" background: url(https://images.unsplash.com/photo-1595174033318-ff6ebd6f77f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D); background-size: cover; background-position: center; background-clip: border-box; background-attachment: fixed;">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-lg-12 mt-5">
+                        <div class="chef-title text-center">
+                            <h3 class="fs-1">Our Professional <span style="color:rgb(255,176,59) ;">Chef</span>
+                            </h3>
+                            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita <br>
+                                at
+                                voluptas atque vitae autem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="chef-images mb-5 ">
+                            <div class="row mt-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <img src="../Icon&photo/chefs-1.jpg" class="img-fluid rounded-pill shadow"
+                                        width="100%" alt="">
+                                    <div class="mt-3 text-center text-white ">
+                                        <h5 class="fs-2">Walter White</h5>
+                                        <h6>Master Chef</h6>
+                                        <a class="text-white" href="https://x.com/?mx=2" target="_blank">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                                    <img src="../Icon&photo/chefs-2.jpg" class="img-fluid rounded-pill" width="100%"
+                                        alt="">
+                                    <div class="text-center mt-3 text-white">
+                                        <h5 class="fs-2">Sarah Jhonson</h5>
+                                        <h6>Patissier</h6>
+                                        <a class="text-white" href="https://x.com/?mx=2" target="_blank">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 ">
+                                    <img src="../Icon&photo/chefs-3.jpg" class="img-fluid rounded-pill" width="100%"
+                                        alt="">
+                                    <div class="text-center text-white mt-3">
+                                        <h5 class="fs-2">William Anderson</h5>
+                                        <h6>Cook</h6>
+                                        <a class="text-white" href="https://x.com/?mx=2" target="_blank">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+
+                                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Chef Area End =============================================== -->
+    </main>
+
+    <!-- Footer Area Start ============================================================= -->
+
+    <footer class="" style="background-color: rgb(14,25,39);" id="Contact">
+        <div class="container p-4">
+            <div class="row text-white">
+                <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+                    <i class="fa-solid fa-location-dot fs-2 text-warning    "></i>
+                    <div class="ms-3">
+                        <h4>Address</h4>
+                        <p> A108 Adam Street <br>New York, NY 53087</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+                    <i class="fa-solid fa-phone fs-2 text-warning"></i>
+                    <div class="ms-3">
+                        <h4>Contact</h4>
+                        <strong>Phone</strong>
+                        <span>+123456789</span> <br>
+
+                        <strong>Email:</strong>
+                        <span>Info@gmail.com</span>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-3 mt-3 mt-lg-0  d-flex align-items-center justify-content-lg-start justify-content-center">
+                    <i class="fa-solid fa-clock fs-2 text-warning"></i>
+                    <div class="ms-3">
+                        <h4>Opening Hours</h4>
+                        <strong>Mon-Sat:</strong>
+                        <span>11Am-23PM</span><br>
+                        <strong>Sunday:</strong>
+                        <span>Close</span>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-3 mt-3 mt-lg-0  d-flex align-items-center justify-content-lg-start justify-content-center">
+                    <i class="fa-solid fa-user-plus fs-2 text-warning "></i>
+                    <div class="ms-3"">
+                        <h4>Follow Us</h4>
+                        <a class=" text-white" href="https://x.com/?mx=2" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <hr>
+            <div class="row text-white">
+                <div class="col-lg-12 text-center">
+                    <h5>© Copyright Delicious All Rights Reserved <br>
+                        Designed by <span class="text-warning">Deepak</span> </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End Here -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

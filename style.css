@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+head,
+body {
+  height: 100%;
+  width: 100%;
+  
+}
+
+/* Base navbar styling */
+.navbar {
+  color: white;
+  padding: 15px 30px; /* Ample padding for a clean look */
+  text-align: center;
+  width: 100%;/* Soft rounded corners */
+  font-size: 20px;
+  font-weight: semi-bold;
+  transition: all 0.3s ease;  /* Smooth transition for background color */
+}
+
+/* Sticky navbar styling */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  z-index: 9999;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow when sticky */
+  transition: all 0.3s ease-in-out;  /* Smooth transition for sticky effect */
+  border-radius: 0px;  /* No border-radius on scroll */
+  transform: translateY(0);  /* Keep navbar in place */
+  padding: 12px 30px; /* Slightly reduced padding on sticky */
+}
+
+
+/* Optional: Navbar text styling */
+.navbar h2 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Optional: Adding animation for smooth appearance of sticky navbar */
+@keyframes fadeInSticky {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sticky {
+  animation: fadeInSticky 0.5s ease-out; /* Fade-in effect when sticky */
+}
+
+
+
+
+/* Index-Page Css */
+
+.navbar .nav-link {
+  color: black;
+  font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(255,193,7);
+  transform: translateY(-2px);
+}
+
+.navbar .navbar-brand:hover {
+  color: rgb(255,193,7);
+}
+
+
+.carousel-item {
+  background-size: cover;
+  position: relative;
+  /* Relative positioning for inner elements */
+  height: 100vh;
+  /* Ensure full height for carousel item */
+}
+
+.carousel-content {
+  position: absolute;
+  /* Absolute positioning for centering */
+  top: 50%;
+  /* Move content to 50% from the top */
+  left: 50%;
+  /* Move content to 50% from the left */
+  transform: translate(-50%, -50%);
+  /* Center content perfectly */
+  text-align: center;
+  /* Center text horizontally */
+  color: white;
+}
+
+
+.top-carousel {
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-blend-mode: darken;
+  background-color: rgba(3, 3, 3, 0.521);
+  height: 100vh;
+}
+
+
+
+.box1 {
+  background-color: rgb(255, 176, 59);
+  color: white;
+}
+
+
+.box2:hover {
+  background-color: rgb(255, 176, 59);
+  color: white;
+  transition: 0.5s ease;
+
+}
+
+.box3:hover {
+  background-color: rgb(255, 176, 59);
+  color: white;
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 3px rgb(240, 232, 220);
+}
+
+
+.bg-img {
+  background-image: url(../Icon&photo/events-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(12, 11, 10, 0.8);
+  background-attachment: fixed;
+  min-height: 10px;
+}
+
+
+.box {
+  background-blend-mode: darken !important;
+  background-color: rgba(55, 54, 54, 0.577) !important;
+}
+
+
+/* About Page Css ================================================================== */
+.about {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  color: white;
+}
+
+.aboutImage {
+  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/1e00d32e05c717312a7af4909158d867-pagetitle.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:60vh;
+  background-blend-mode: darken;
+  background-color: rgba(68, 68, 68, 0.449);
+}
+
+.specialMeal{
+  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/Rectangle-571-copy.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-attachment: fixed;
+}
+
+.egg:hover {
+  transform: translateY(-5px) scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(255, 193, 7);
+  color: white;
+}
+.music:hover {
+  transform: translateY(-5px) scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(255, 193, 7);
+  color: white;
+}
+.spoon:hover {
+  transform: translateY(-5px) scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(255, 193, 7);
+  color: white;
+}
+
+/* About Page Css End ================================================================ */
+
+/* Menu Page css =================================================================== */
+
+.menuImage {
+  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/calum-lewis-8Nc_oQsc2qQ-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:60vh;
+  background-blend-mode: darken;
+  background-color: rgba(68, 68, 68, 0.449);
+}
+
+
+.plate1{
+position: absolute;
+top: -10%;
+left: -7%;
+z-index: 0;
+}
+
+.plate2{
+position: absolute;
+top: -5%;
+right: -7%;
+z-index: 0;
+}
+
+
+
+@media (max-width:512px) {
+  .plate2{
+    opacity: 0;
+  }
+}
+@media (max-width:512px) {
+  .plate1{
+    opacity: 0;
+  }
+}
+
+/* Chef Page Css */
+
+.chefImage {
+  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/7LYC6SC2BFD27DVIGGV3PZ6B5M.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:60vh;
+  background-blend-mode: darken;
+  background-color: rgba(68, 68, 68, 0.449);
+}
+
+/* Contact Page Css */
+
+.contactImage {
+  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/carlos-lindner-sjBYA8dAw54-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height:60vh;
+  background-blend-mode: darken;
+  background-color: rgba(68, 68, 68, 0.449);
+}
+
+.contactBgImg{
+  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/Rectangle-571-copy.jpg");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-attachment: fixed;
+}
+
+/* Book table pahe css */
+
+.BookTableImage {
+  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/carlos-lindner-sjBYA8dAw54-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  background-blend-mode: darken;
+  background-color: rgba(68, 68, 68, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .BookTableImage {
+      height: 40vh;
+  }
+  
+  h1 {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+}
+
+.cards{
+  margin-top: 6%;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.customIndicators{
+  width: 10px !important;
+  height: 10px !important;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@media screen and (min-width:992px) {
+  .customNav{
+      position: sticky !important;
+      top: -1%;
+      background-color: white;
+      z-index: 99999;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+}
+
+  @media screen and (max-width:991px) {
+      .customNav{
+position: static !important;
+      }
+      
+  }
