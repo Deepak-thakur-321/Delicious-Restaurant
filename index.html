@@ -17,11 +17,11 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <div class="container-fluid bg-warning rounded-pill">
+                <div class="d-none d-lg-block d-md-block container-fluid bg-warning rounded-pill">
                     <div class="row">
                         <div class="col-lg-12">
                             <div
-                                class="navtop px-3 py-2 d-flex flex-column flex-md-row gap-3 gap-md-5 text-white justify-content-center justify-content-md-evenly fs-5">
+                                class="navtop d-flex flex-md-row gap-3 gap-md-5 text-white justify-content-center justify-content-md-evenly fs-5">
                                 <div class="d-flex align-items-center gap-2">
                                     <i class="fa-solid fa-square-phone fs-4"></i>
                                     <span>+1 5589 55488 55</span>
@@ -88,11 +88,11 @@
 
                         <div class="offcanvas offcanvas-end d-lg-none d-block" id="nav-home" data-bs-backdrop="false">
                             <div class="offcanvas-header">
-                                <button class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+                                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
                             </div>
 
-                            <div class="offcanvas-body">
-                                <ul class="nav navbar-nav">
+                            <div class="offcanvas-body bg-warning">
+                                <ul class="nav navbar-nav text-start gap-3">
                                     <li class="nav-item">
                                         <a href="index.html" class="nav-link">Home</a>
                                     </li>
@@ -131,12 +131,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 ">
-               
+
                 <div class="carousel slide" data-bs-ride="carousel" id="abc">
                     <div class="carousel-indicators">
-                        <button data-bs-slide-to="0" data-bs-target="#abc" class="active customIndicators" aria-label="Slide 1"></button>
-                        <button class="customIndicators" data-bs-slide-to="1" data-bs-target="#abc" aria-label="Slide 2"></button>
-                        <button class="customIndicators" data-bs-slide-to="2" data-bs-target="#abc" aria-label="Slide 3"></button>
+                        <button data-bs-slide-to="0" data-bs-target="#abc" class="active customIndicators"
+                            aria-label="Slide 1"></button>
+                        <button class="customIndicators" data-bs-slide-to="1" data-bs-target="#abc"
+                            aria-label="Slide 2"></button>
+                        <button class="customIndicators" data-bs-slide-to="2" data-bs-target="#abc"
+                            aria-label="Slide 3"></button>
                     </div>
 
                     <div class="carousel-inner  ">
@@ -346,21 +349,15 @@
             <div class="row mt-5">
                 <div class="col-lg-12">
                     <div class="check-menu mt-5">
-                        <h3 class="text-center fs-1 mb-4">Chech Our Tasty <span
-                                style="color: rgb(255,176,59);">Menu</span>
+                        <h3 class="text-center fs-1">Chech Our Tasty <span style="color: rgb(255,176,59);">Menu</span>
                         </h3>
-                        <div>
-                            <div class="menu-btn text-center mt-4">
-                                <div class="btn btn-warning rounded-pill px-5 ">Show All</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row mt-5">
+            <div class="row mt-4">
                 <div class="col-lg-4 text-center text-md-center text-lg-start">
                     <ul class="list-unstyled ">
                         <li>
@@ -574,15 +571,17 @@
                                         aria-label="Slide 3"></button>
                                 </div>
 
+                                <!-- 1st -->
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <div class="d-flex align-items-center justify-content-center mt-5 py-5">
-                                            <div class="col-lg-5">
-                                                <img class="img-fluid" src="../Icon&photo/event-birthday.jpg"
+                                        <div class=" row align-items-center mt-4 justify-content-center ">
+                                            <div class="col-lg-6 text-center text-lg-start">
+                                                <img class="img-fluid rounded" src="../Icon&photo/event-birthday.jpg"
                                                     alt="Birthday Party">
                                             </div>
-                                            <div class="col-lg-6">
-                                                <div class="birthday-content text-white ms-5">
+
+                                            <div class="col-lg-6 d-flex align-items-center">
+                                                <div class="birthday-content text-white p-4 w-100">
                                                     <h5 class="text-warning">Birthday Parties</h5>
                                                     <a class=" text-decoration-underline  fs-4" href="#">$189</a>
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
@@ -624,15 +623,15 @@
                                     </div>
 
 
-
+                                    <!-- 2nd -->
                                     <div class="carousel-item">
-                                        <div class="d-flex align-items-center justify-content-center mt-5  py-5">
-                                            <div class="col-lg-5">
-                                                <img class="img-fluid" src="../Icon&photo/event-private.jpg"
+                                        <div class="row align-items-center mt-4 justify-content-center">
+                                            <div class="col-lg-6 text-center text-lg-start">
+                                                <img class="img-fluid rounded" src="../Icon&photo/event-private.jpg"
                                                     alt="Private Party">
                                             </div>
-                                            <div class="col-lg-6">
-                                                <div class="birthday-content text-white ms-5">
+                                            <div class="col-lg-6 d-flex align-items-center">
+                                                <div class="birthday-content text-white p-4 w-100">
                                                     <h5 class="text-warning">Private Parties</h5>
                                                     <a class=" text-decoration-underline  fs-4" href="#">$444</a>
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
@@ -675,15 +674,16 @@
                                     </div>
 
 
-
+                                    <!-- 3rd -->
                                     <div class="carousel-item">
-                                        <div class="d-flex align-items-center justify-content-center mt-5  py-5">
-                                            <div class="col-lg-5">
-                                                <img class="img-fluid" src="../Icon&photo/event-custom.jpg"
+                                        <div class="row align-items-center mt-4 justify-content-center">
+                                            <div class="col-lg-6 text-center text-lg-start">
+                                                <img class="img-fluid rounded" src="../Icon&photo/event-custom.jpg"
                                                     alt="Custom Party">
                                             </div>
-                                            <div class="col-lg-6">
-                                                <div class="birthday-content text-white ms-5">
+
+                                            <div class="col-lg-6 d-flex align-items-center">
+                                                <div class="birthday-content text-white p-4 w-100">
                                                     <h5 class="text-warning">Custom Parties</h5>
                                                     <a class=" text-decoration-underline  fs-4" href="#">$299</a>
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
@@ -942,12 +942,12 @@
                 </div>
 
                 <div
-                    class="col-lg-3 mt-3 mt-lg-0  d-flex align-items-center justify-content-lg-start justify-content-center">
+                    class="col-lg-3 mt-3 mt-lg-0  d-flex align-items-center  justify-content-lg-start justify-content-center">
                     <i class="fa-solid fa-user-plus fs-2 text-warning "></i>
-                    <div class="ms-3"">
+                    <div class="ms-3">
                         <h4>Follow Us</h4>
                         <a class=" text-white" href="https://x.com/?mx=2" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-twitter"></i>
                         </a>
 
                         <a class="text-white" href="https://www.facebook.com/" target="_blank">

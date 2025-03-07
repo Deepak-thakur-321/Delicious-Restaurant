@@ -13,25 +13,22 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
 
-                    <div class="container-fluid bg-warning rounded-pill">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="navtop px-3 py-2 d-flex gap-5 text-white justify-content-evenly fs-5">
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <i class="fa-solid fa-square-phone fs-4"></i>
-                                        <span>+1 5589 55488 55</span>
-                                    </div>
-
-                                    <div class="d-flex align-items-center gap-2 ">
-                                        <i class="fa-solid fa-clock fs-4"></i>
-                                        <span>Mon-Sat: 11:00 AM - 23:00 PM</span>
-                                    </div>
+                <div class="d-none d-lg-block d-md-block container-fluid bg-warning rounded-pill">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div
+                                class="navtop d-flex flex-md-row gap-3 gap-md-5 text-white justify-content-center justify-content-md-evenly fs-5">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-square-phone fs-4"></i>
+                                    <span>+1 5589 55488 55</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fa-solid fa-clock fs-4"></i>
+                                    <span>Mon-Sat: 11:00 AM - 23:00 PM</span>
                                 </div>
                             </div>
                         </div>
@@ -45,10 +42,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <nav class="navbar navbar-expand-lg">
+                    <nav class="navbar navbar-expand-lg customNavbar">
                         <a href="#home" class="navbar-brand fs-2">Delicious</a>
 
-                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav">
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav-home">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -88,13 +85,13 @@
 
                         <!-- Mobile Navbar Offcanvas Start-->
 
-                        <div class="offcanvas offcanvas-end d-lg-none d-block" id="nav" data-bs-backdrop="false">
+                        <div class="offcanvas offcanvas-end d-lg-none d-block" id="nav-home" data-bs-backdrop="false">
                             <div class="offcanvas-header">
-                                <button class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+                                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
                             </div>
 
-                            <div class="offcanvas-body">
-                                <ul class="nav navbar-nav">
+                            <div class="offcanvas-body bg-warning">
+                                <ul class="nav navbar-nav text-start gap-3">
                                     <li class="nav-item">
                                         <a href="index.html" class="nav-link">Home</a>
                                     </li>
@@ -125,9 +122,6 @@
             </div>
         </div>
     </div>
-    </div>
-
-
 
     <main>
         <div class="container-fluid">
