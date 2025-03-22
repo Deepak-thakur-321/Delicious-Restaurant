@@ -7,7 +7,7 @@ function counter(element, endpoint, time) {
     let count = setInterval(update, time);
 
     function update() {
-        element.innerHTML = ++upto;
+        element.innerHTML = ++upto + "+";
         if (upto === endpoint) {
             clearInterval(count);
         }
@@ -42,6 +42,7 @@ counters.forEach((counter) => {
 //         navbar.classList.remove("sticky")
 //     }
 // })
+
 
 
 

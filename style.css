@@ -1,10 +1,8 @@
-
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-style: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -13,20 +11,23 @@ head,
 body {
   height: 100%;
   width: 100%;
-  
+}
+
+body{
+  overflow-x: hidden;
 }
 
 /* Base navbar styling */
 .navbar {
   color: white;
-  padding: 15px 30px; /* Ample padding for a clean look */
+  padding: 15px 30px;
   text-align: center;
-  width: 100%;/* Soft rounded corners */
+  width: 100%;
   font-size: 20px;
   font-weight: semi-bold;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;  /* Smooth transition for background color */
+  transition: all 0.3s ease;
 }
 
 /* Sticky navbar styling */
@@ -38,103 +39,116 @@ body {
   background-color: whitesmoke;
   z-index: 9999;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow when sticky */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;  /* Smooth transition for sticky effect */
-  border-radius: 0px;  /* No border-radius on scroll */
+  transition: all 0.3s ease-in-out;
+  border-radius: 0px;
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);  /* Keep navbar in place */
-  padding: 12px 30px; /* Slightly reduced padding on sticky */
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  padding: 12px 30px;
 }
 
-
-/* Optional: Navbar text styling */
-.navbar h2 {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 2px;
-  margin: 0;
-  text-transform: uppercase;
-}
 
 /* Optional: Adding animation for smooth appearance of sticky navbar */
 @-webkit-keyframes fadeInSticky {
   from {
     opacity: 0;
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
+
   to {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
+
 @keyframes fadeInSticky {
   from {
     opacity: 0;
     -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
+
   to {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 .sticky {
   -webkit-animation: fadeInSticky 0.5s ease-out;
-          animation: fadeInSticky 0.5s ease-out; /* Fade-in effect when sticky */
+  animation: fadeInSticky 0.5s ease-out;
 }
 
 
-
-
-/* Index-Page Css */
+/*Navbar (Index Page) */
 
 .navbar .nav-link {
-  color: black;
   font-size: 18px;
 }
 
-.navbar .nav-link:hover {
-  color: rgb(255,193,7);
+.customNavbar .navbar-toggler {
+  border: none;
+}
+
+.customNavbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f1c40f !important;
   -webkit-transform: translateY(-2px);
-      -ms-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
-.navbar .navbar-brand:hover {
-  color: rgb(255,193,7);
+/* Book A Table Button */
+.btn-book {
+  background-color: #f1c40f;
+  border: none;
+  transition: background 0.3s ease-in-out;
 }
 
+.btn-book:hover {
+  background-color: #d4ac0d;
+}
+
+/*Navbar (Index Page) End */
+
+
+/* Carousel (Index Page) */
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 
 .carousel-item {
   background-size: cover;
   position: relative;
-  /* Relative positioning for inner elements */
   height: 100vh;
-  /* Ensure full height for carousel item */
 }
 
 .carousel-content {
   position: absolute;
-  /* Absolute positioning for centering */
   top: 50%;
-  /* Move content to 50% from the top */
   left: 50%;
-  /* Move content to 50% from the left */
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  /* Center content perfectly */
+  transform: translate(-50%, -50%);
   text-align: center;
-  /* Center text horizontally */
   color: white;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
-
 
 .top-carousel {
   background-size: cover;
@@ -144,168 +158,87 @@ body {
   background-blend-mode: darken;
   background-color: rgba(3, 3, 3, 0.521);
   height: 100vh;
+  width: 100%;
 }
 
+/* Carousel (Index Page) End */
 
+
+/* Why Choose (Index Page) */
 
 .box1 {
-  background-color: rgb(255, 176, 59);
+  background-color: #6D071A;
   color: white;
 }
 
+.box1:hover {
+  background-color: #6D071A;
+  color: white;
+}
 
 .box2:hover {
-  background-color: rgb(255, 176, 59);
+  background-color: #6D071A;
   color: white;
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
-
 }
 
 .box3:hover {
-  background-color: rgb(255, 176, 59);
+  background-color: #6D071A;
   color: white;
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
   -webkit-box-shadow: 5px 5px 3px rgb(240, 232, 220);
-          box-shadow: 5px 5px 3px rgb(240, 232, 220);
+  box-shadow: 5px 5px 3px rgb(240, 232, 220);
 }
 
-
-.bg-img {
-  background-image: url(../Icon&photo/events-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: border-box;
-  background-size: cover;
-  background-blend-mode: darken;
-  background-color: rgba(12, 11, 10, 0.8);
-  background-attachment: fixed;
-  min-height: 10px;
+.chef-card img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
 }
 
+/* About Page Css */
 
-.box {
-  background-blend-mode: darken !important;
-  background-color: rgba(55, 54, 54, 0.577) !important;
-}
-
-
-/* About Page Css ================================================================== */
-.about {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: black;
-  color: white;
-}
-
-.aboutImage {
-  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/1e00d32e05c717312a7af4909158d867-pagetitle.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height:60vh;
-  background-blend-mode: darken;
-  background-color: rgba(68, 68, 68, 0.449);
-}
-
-.specialMeal{
+.specialMeal {
   background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/Rectangle-571-copy.jpg");
   width: 100%;
   height: 60vh;
   background-size: cover;
-  background-position: center ;
+  background-position: center;
   background-repeat: no-repeat;
   background-clip: border-box;
   background-attachment: fixed;
 }
 
-.egg:hover {
-  -webkit-transform: translateY(-5px) scale(1.05);
-      -ms-transform: translateY(-5px) scale(1.05);
-          transform: translateY(-5px) scale(1.05);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  background-color: rgb(255, 193, 7);
-  color: white;
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6D071A, #B81E3E);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
 }
-.music:hover {
-  -webkit-transform: translateY(-5px) scale(1.05);
-      -ms-transform: translateY(-5px) scale(1.05);
-          transform: translateY(-5px) scale(1.05);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  background-color: rgb(255, 193, 7);
-  color: white;
+
+.about-card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  color: #FFD700;
+  background-color: #B81E3E;
 }
-.spoon:hover {
-  -webkit-transform: translateY(-5px) scale(1.05);
-      -ms-transform: translateY(-5px) scale(1.05);
-          transform: translateY(-5px) scale(1.05);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  background-color: rgb(255, 193, 7);
-  color: white;
+
+.about-image{
+  overflow-x: hidden;
 }
 
 /* About Page Css End ================================================================ */
 
-/* Menu Page css =================================================================== */
-
-.menuImage {
-  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/calum-lewis-8Nc_oQsc2qQ-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height:60vh;
-  background-blend-mode: darken;
-  background-color: rgba(68, 68, 68, 0.449);
-}
-
-
-.plate1{
-position: absolute;
-top: -10%;
-left: -7%;
-z-index: 0;
-}
-
-.plate2{
-position: absolute;
-top: -5%;
-right: -7%;
-z-index: 0;
-}
-
-
-
-@media (max-width:512px) {
-  .plate2{
-    opacity: 0;
-  }
-}
-@media (max-width:512px) {
-  .plate1{
-    opacity: 0;
-  }
-}
 
 /* Chef Page Css */
 
@@ -315,36 +248,35 @@ z-index: 0;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height:60vh;
+  height: 60vh;
   background-blend-mode: darken;
   background-color: rgba(68, 68, 68, 0.449);
 }
 
-/* Contact Page Css */
+/* Menu Page Css */
 
-.contactImage {
-  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/carlos-lindner-sjBYA8dAw54-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height:60vh;
-  background-blend-mode: darken;
-  background-color: rgba(68, 68, 68, 0.449);
+.menu-image{
+  overflow-x: hidden;
+  padding: 0;
+}
+.chef-image{
+  overflow-x: hidden;
+  padding: 0;
+}
+.special-image{
+  overflow-x: hidden;
+  padding: 0;
+}
+.gallery-image{
+  overflow-x: hidden;
+  padding: 0;
+}
+.contact-image{
+  overflow-x: hidden;
+  padding: 0;
 }
 
-.contactBgImg{
-  background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/Rectangle-571-copy.jpg");
-  width: 100%;
-  height: 70vh;
-  background-size: cover;
-  background-position: center ;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  background-attachment: fixed;
-}
-
-/* Book table pahe css */
+/* Book Table Page Css */
 
 .BookTableImage {
   background-image: url("https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/09/carlos-lindner-sjBYA8dAw54-unsplash.jpg");
@@ -353,19 +285,20 @@ z-index: 0;
   background-repeat: no-repeat;
   width: 100%;
   height: 60vh;
-  background-blend-mode: darken;
-  background-color: rgba(68, 68, 68, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  
+  /* Dark Overlay Effect */
+  background-color: rgba(37, 35, 35, 0.7); /* Increased opacity */
+  background-blend-mode: overlay;
+
+  /* Center Content */
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+
+  padding: 0;
 }
+
 
 h1 {
   font-weight: bold;
@@ -374,42 +307,45 @@ h1 {
 
 @media (max-width: 768px) {
   .BookTableImage {
-      height: 40vh;
+    height: 40vh;
   }
-  
+
   h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 }
 
-.cards{
+.cards {
   margin-top: 6%;
 }
+
 .card:hover {
   -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 .card-img-top {
   height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .btn-outline-warning:hover {
   background-color: #ffc107;
   color: #fff;
 }
 
-.customIndicators{
+.customIndicators {
   width: 10px !important;
   height: 10px !important;
   background-color: white;
@@ -417,19 +353,49 @@ h1 {
 }
 
 @media screen and (min-width:992px) {
-  .customNav{
-      position: sticky !important;
-      top: -1%;
-      background-color: white;
-      z-index: 99999;
-      -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  .customNav {
+    position: sticky !important;
+    top: -1%;
+    background-color: white;
+    z-index: 99999;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 }
 
-  @media screen and (max-width:991px) {
-      .customNav{
-position: static !important;
-      }
-      
+@media screen and (max-width:991px) {
+  .customNav {
+    position: static !important;
   }
+}
+
+/* Book Table Page Css */
+
+
+:root {
+
+  /* 🎨 Background Color */
+  --bg-primary: #6D071A;
+
+
+  /* 🎨 Text Colors */
+  --text-primary: #FFD700;
+
+}
+
+
+.bg-primary-custom {
+  background-color: var(--bg-primary) !important;
+}
+
+.text-primary-custom {
+  color: var(--text-primary) !important
+}
+
+.text-danger-custom {
+  color: var(--bg-primary) !important
+}
+
+
+
+

@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <header class="container-fluid">
+    <!-- Nav Top Start -->
+    <header class="container-fluid bg-primary-custom">
         <div class="row">
             <div class="col-lg-12">
-
-                <div class="d-none d-lg-block d-md-block container-fluid bg-warning rounded-pill">
+                <div class="d-none d-lg-block d-md-block container-fluid ">
                     <div class="row">
                         <div class="col-lg-12">
                             <div
                                 class="navtop d-flex flex-md-row gap-3 gap-md-5 text-white justify-content-center justify-content-md-evenly fs-5">
                                 <div class="d-flex align-items-center gap-2">
                                     <i class="fa-solid fa-square-phone fs-4"></i>
-                                    <span>+1 5589 55488 55</span>
+                                    <span class="text-primary-custom">+1 5589 55488 55</span>
                                 </div>
                                 <div class="d-flex align-items-center gap-2">
                                     <i class="fa-solid fa-clock fs-4"></i>
-                                    <span>Mon-Sat: 11:00 AM - 23:00 PM</span>
+                                    <span class="text-primary-custom">Mon-Sat: 11:00 AM - 23:00 PM</span>
                                 </div>
                             </div>
                         </div>
@@ -37,43 +37,49 @@
             </div>
         </div>
     </header>
-    <div class="container-fluid customNav">
+    <!-- Nav Top End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid customNav mt-lg-2 mt-0 bg-primary-custom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <nav class="navbar navbar-expand-lg">
-                        <a href="#home" class="navbar-brand fs-2">Delicious</a>
+                    <nav class="navbar navbar-expand-lg customNavbar ">
+                        <a href="#home" class="navbar-brand fs-2 text-white">Delicious</a>
 
-                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav">
+                        <!-- Navbar Toggler -->
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav-home">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
+                        <!-- Desktop Navbar -->
                         <div class="d-lg-block d-none ms-auto">
-                            <ul class="nav navbar-nav gap-3"> <!--border border-5-->
+                            <ul class="nav navbar-nav gap-3">
                                 <li class="nav-item">
-                                    <a class="nav-link icon-link icon-link-hover" href="index.html">Home</a>
+                                    <a class="nav-link icon-link icon-link-hover text-primary-custom"
+                                        href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="About.html">About</a>
+                                    <a class="nav-link text-white" href="About.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Menu.html">Menu</a>
+                                    <a class="nav-link text-white" href="Menu.html">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Special.html">Specials</a>
+                                    <a class="nav-link text-white" href="Special.html">Specials</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Chef.html">Chef</a>
+                                    <a class="nav-link text-white" href="Chef.html">Chef</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Gallery.html">Gallery</a>
+                                    <a class="nav-link text-white" href="Gallery.html">Gallery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Contact.html">Contact</a>
+                                    <a class="nav-link text-white" href="Contact.html">Contact</a>
                                 </li>
                                 <li>
-                                    <a href="#bookATable" class="text-decoration-none">
-                                        <button class="btn btn-warning rounded-pill px-3">
+                                    <a href="BookTable.html" class="text-decoration-none">
+                                        <button class="btn btn-warning text-white rounded-pill px-3 btn-book">
                                             Book A Table
                                         </button>
                                     </a>
@@ -82,48 +88,47 @@
                         </div>
                         <!-- Desktop Navbar End -->
 
-                        <!-- Mobile Navbar Offcanvas Start-->
-
-                        <div class="offcanvas offcanvas-end d-lg-none d-block" id="nav" data-bs-backdrop="false">
+                        <!-- Mobile Navbar Offcanvas -->
+                        <div class="offcanvas offcanvas-end offcanvas-custom d-lg-none d-block" id="nav-home">
                             <div class="offcanvas-header">
-                                <button class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+                                <button class="btn-close text-white" data-bs-dismiss="offcanvas"></button>
                             </div>
 
-                            <div class="offcanvas-body">
-                                <ul class="nav navbar-nav">
+                            <div class="offcanvas-body bg-primary-custom">
+                                <ul class="nav navbar-nav text-start gap-3 ">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link">Home</a>
+                                        <a href="index.html" class="nav-link text-white">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="About.html" class="nav-link">About</a>
+                                        <a href="About.html" class="nav-link text-white">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Menu.html" class="nav-link">Menu</a>
+                                        <a href="Menu.html" class="nav-link text-white">Menu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Special.html" class="nav-link">Special</a>
+                                        <a href="Special.html" class="nav-link text-white">Special</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Chef.html" class="nav-link">Chef</a>
+                                        <a href="Chef.html" class="nav-link text-white">Chef</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Gallery.html" class="nav-link">Gallery</a>
+                                        <a href="Gallery.html" class="nav-link text-white">Gallery</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Contact.html" class="nav-link">Contact</a>
+                                        <a href="Contact.html" class="nav-link text-white">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <!-- Mobile Navbar End -->
                     </nav>
-                    <!-- Mobile Navbar End -->
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    <!-- Navbar End -->
 
-
+    <!-- Banner Area -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
@@ -133,7 +138,9 @@
             </div>
         </div>
     </div>
+    <!-- Banner Area End -->
 
+    <!-- Rules Section 1st Card -->
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-lg-6 text-white">
@@ -145,13 +152,11 @@
                         <li>🎉 After 3 times of booking and coming to dine at the restaurant, you will receive a 10%
                             discount on the total meal value.</li>
                         <li> 🥗 Free salad when booking</li>
-
                     </ul>
                 </div>
             </div>
 
-
-
+            <!-- Rules Section 2st Card -->
             <div class="col-lg-6 text-white mt-3 mt-lg-0">
                 <div class="shadow px-5 py-5 rounded-4" style="background-color: rgb(14,25,39);">
                     <h2 class="text-center text-danger">TABLE RESERVATION RULES</h2>
@@ -166,9 +171,9 @@
             </div>
         </div>
     </div>
+    <!-- Rules Section End-->
 
-
-
+    <!-- Form Section -->
     <div class="container-fluid" style="margin-top: 6%; background-color: rgb(249,241,231);">
         <div class="row">
             <div class="col-lg-3 d-flex align-items-center">
@@ -179,7 +184,7 @@
             <div class="col-lg-6 text-center mt-5">
                 <div>
                     <h6 class="text-warning">ONLINE RESERVATION</h6>
-                    <h1>BOOK A TABLE</h1>
+                    <h1 class="text-danger-custom">BOOK A TABLE</h1>
                     <p>After booking we will call the customer to confirm,
                         so please enter your name and phone number is required, thank you!</p>
                 </div>
@@ -219,7 +224,9 @@
             </div>
         </div>
     </div>
+    <!-- Form Section End -->
 
+    <!-- Place Card section -->
     <div class="container-fluid cards">
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 mb-4">
@@ -227,127 +234,137 @@
                     <img src="https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/10/saskia-fairfull-9rDLLDNJaPI-unsplash.jpg"
                         alt="" class="card-img-top">
                     <div class="card-body text-center">
-                        <h6 class="text-warning">AUSTRALIA</h6>
-                        <h4 class="text-dark">BASILICO SYDNEY</h4>
-                        <p class="border-bottom pb-3">Sed ut perspiciatis unde omnis iste natus error <br> sit
-                            voluptatem accusantium
-                            doloremque</p>
-                        <p>4517 Washington Ave. Manchester, 39495, AU <br>
-                            +(406) 555-0120</p>
-                        <p>Basilicofood123@gmail.com</p>
-                        <a class="btn btn-outline-warning" href="">GET DIRECTION</a>
+                        <h6 class="text-warning">NEW DELHI</h6>
+                        <h4 class="text-danger-custom">ZAAYKA-E-DILLI</h4>
+                        <p class="border-bottom pb-3">A taste of Mughlai heritage with rich flavors and aromatic spices
+                            from the heart of Old Delhi.</p>
+                        <p>1430 Kucha Ghasiram, Chandni Chowk, Delhi, IN <br>
+                            +(91) 98765-43210</p>
+                        <p>zaaykadelhi@gmail.com</p>
+                        <a class="btn btn-outline-warning"
+                            href="https://www.google.com/maps/place/Connaught+Place,+New+Delhi,+Delhi+110001/@28.6289016,77.2049872,15z/data=!3m1!4b1!4m6!3m5!1s0x390cfd37b741d057:0xcdee88e47393c3f1!8m2!3d28.6304203!4d77.2177216!16zL20vMDR4eDB4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D">GET
+                            DIRECTION</a>
                     </div>
                 </div>
             </div>
 
+            <!-- 2nd -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card border-0 shadow">
                     <img src="https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/10/pexels-taha-samet-arslan-12533385-1.jpg"
                         alt="" class="card-img-top">
                     <div class="card-body text-center">
-                        <h6 class="text-warning">JAPAN</h6>
-                        <h4 class="text-dark">BASILICO TOKYO</h4>
-                        <p class="border-bottom pb-3">Sed ut perspiciatis unde omnis iste natus error <br> sit
-                            voluptatem accusantium
-                            doloremque</p>
-                        <p>4517 Washington Ave. Manchester, 39495, AU <br>
-                            +(406) 555-0120</p>
-                        <p>Basilicofood123@gmail.com</p>
-                        <a class="btn btn-outline-warning" href="">GET DIRECTION</a>
+                        <h6 class="text-warning">MUMBAI</h6>
+                        <h4 class="text-danger-custom">BOMBAY BITE</h4>
+                        <p class="border-bottom pb-3">Experience Mumbai’s vibrant flavors, from Pav Bhaji to Butter
+                            Chicken, with a stunning sea view.</p>
+                        <p>231 Marine Drive, Mumbai, MH, IN <br>
+                            +(91) 91234-56789</p>
+                        <p>bombaybite@gmail.com</p>
+                        <a class="btn btn-outline-warning"
+                            href="https://www.google.com/maps/place/Connaught+Place,+New+Delhi,+Delhi+110001/@28.6289016,77.2049872,15z/data=!3m1!4b1!4m6!3m5!1s0x390cfd37b741d057:0xcdee88e47393c3f1!8m2!3d28.6304203!4d77.2177216!16zL20vMDR4eDB4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D">GET
+                            DIRECTION</a>
                     </div>
                 </div>
             </div>
 
+            <!-- 3rd -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card border-0 shadow">
                     <img src="https://demo.7iquid.com/basilico/main/wp-content/uploads/2023/08/piotr-szulawski-DCmUhk54F6M-unsplash.jpg"
                         alt="" class="card-img-top">
                     <div class="card-body text-center">
-                        <h6 class="text-warning">AMERICA</h6>
-                        <h4 class="text-dark">BASILICO NEW YORK</h4>
-                        <p class="border-bottom pb-3">Sed ut perspiciatis unde omnis iste natus error <br> sit
-                            voluptatem accusantium
-                            doloremque</p>
-                        <p>4517 Washington Ave. Manchester, 39495, AU <br>
-                            +(406) 555-0120</p>
-                        <p>Basilicofood123@gmail.com</p>
-                        <a class="btn btn-outline-warning" href="">GET DIRECTION</a>
+                        <h6 class="text-warning">KOLKATA</h6>
+                        <h4 class="text-danger-custom">BENGALI BHOJAN</h4>
+                        <p class="border-bottom pb-3">Indulge in Kolkata’s culinary gems, from Fish Curry to Kosha
+                            Mangsho, in an elegant ambiance.</p>
+                        <p>56 Park Street, Kolkata, WB, IN <br>
+                            +(91) 92345-67890</p>
+                        <p>bengalibhojan@gmail.com</p>
+                        <a class="btn btn-outline-warning"
+                            href="https://www.google.com/maps/place/Connaught+Place,+New+Delhi,+Delhi+110001/@28.6289016,77.2049872,15z/data=!3m1!4b1!4m6!3m5!1s0x390cfd37b741d057:0xcdee88e47393c3f1!8m2!3d28.6304203!4d77.2177216!16zL20vMDR4eDB4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D">GET
+                            DIRECTION</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+     <!-- Place Card section End -->
 
-    <footer class="mt-3 mt-lg-0" style="background-color: rgb(14,25,39); background-attachment: scroll;" id="Contact">
-        <div class="container p-4">
+    <!-- Footer Start -->
+    <footer class="mt-3" style="background-color: #1B1B1B; color: white; padding: 40px 0;" id="Contact">
+        <div class="container">
             <div class="row text-white">
-                <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
-                    <i class="fa-solid fa-location-dot fs-2 text-warning    "></i>
+                <!-- Address -->
+                <div class="col-lg-3 d-flex align-items-center">
+                    <i class="fa-solid fa-map-marker-alt fs-2 text-warning"></i>
                     <div class="ms-3">
-                        <h4>Address</h4>
-                        <p> A108 Adam Street <br>New York, NY 53087</p>
+                        <h4>Our Location</h4>
+                        <p> Connaught Place, New Delhi <br> India - 110001</p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+                <!-- Contact Info -->
+                <div class="col-lg-3 d-flex align-items-center">
                     <i class="fa-solid fa-phone fs-2 text-warning"></i>
                     <div class="ms-3">
-                        <h4>Contact</h4>
-                        <strong>Phone</strong>
-                        <span>+123456789</span> <br>
-
+                        <h4>Contact Us</h4>
+                        <strong>Phone:</strong>
+                        <span>+91 98765 43210</span> <br>
                         <strong>Email:</strong>
-                        <span>Info@gmail.com</span>
+                        <span>support@delicious.in</span>
                     </div>
                 </div>
 
-                <div
-                    class="col-lg-3 mt-3 mt-lg-0  d-flex align-items-center justify-content-lg-start justify-content-center">
+                <!-- Opening Hours -->
+                <div class="col-lg-3 d-flex align-items-center">
                     <i class="fa-solid fa-clock fs-2 text-warning"></i>
                     <div class="ms-3">
                         <h4>Opening Hours</h4>
-                        <strong>Mon-Sat</strong>
-                        <span>11Am-23PM</span><br>
-                        <strong>Sunday</strong>
-                        <span>Close</span>
+                        <strong>Mon - Sat:</strong>
+                        <span>10 AM - 11 PM</span><br>
+                        <strong>Sunday:</strong>
+                        <span>Closed</span>
                     </div>
                 </div>
 
-                <div
-                    class="col-lg-3 mt-3 mt-lg-0  d-flex align-items-center justify-content-lg-start justify-content-center">
-                    <i class="fa-solid fa-user-plus fs-2 text-warning "></i>
-                    <div class="ms-3"">
+                <!-- Follow Us -->
+                <div class="col-lg-3 d-flex align-items-center">
+                    <i class="fa-solid fa-users fs-2 text-warning"></i>
+                    <div class="ms-3">
                         <h4>Follow Us</h4>
-                        <a class=" text-white" href="https://x.com/?mx=2" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
+                        <a class="text-white text-decoration-none me-2" href="https://wa.me/919876543210"
+                            target="_blank">
+                            <i class="fa-brands fa-whatsapp fs-4"></i>
                         </a>
-
-                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
+                        <a class="text-white text-decoration-none me-2" href="https://www.instagram.com/"
+                            target="_blank">
+                            <i class="fa-brands fa-instagram fs-4"></i>
                         </a>
-
-                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
+                        <a class="text-white text-decoration-none me-2" href="https://www.facebook.com/"
+                            target="_blank">
+                            <i class="fa-brands fa-facebook fs-4"></i>
                         </a>
-
-                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
+                        <a class="text-white text-decoration-none" href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin fs-4"></i>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-            <hr>
-            <div class="row text-white">
-                <div class="col-lg-12 text-center">
-                    <h5>© Copyright Delicious All Rights Reserved <br>
-                        Designed by <span class="text-warning">Deepak</span> </h5>
+            <hr class="my-4 border-light">
+
+            <!-- Copyright Section -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <h5>© 2025 Delicious | All Rights Reserved <br>
+                        <span class="text-warning">Designed & Developed by Deepak</span>
+                    </h5>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Footer End -->
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

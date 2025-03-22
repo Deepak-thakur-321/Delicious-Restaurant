@@ -10,25 +10,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    <header class="container-fluid">
+    <!-- Top Nav -->
+    <header class="container-fluid bg-primary-custom">
         <div class="row">
             <div class="col-lg-12">
-
-                <div class="d-none d-lg-block d-md-block container-fluid bg-warning rounded-pill">
+                <div class="d-none d-lg-block d-md-block container-fluid ">
                     <div class="row">
                         <div class="col-lg-12">
                             <div
                                 class="navtop d-flex flex-md-row gap-3 gap-md-5 text-white justify-content-center justify-content-md-evenly fs-5">
                                 <div class="d-flex align-items-center gap-2">
                                     <i class="fa-solid fa-square-phone fs-4"></i>
-                                    <span>+1 5589 55488 55</span>
+                                    <span class="text-primary-custom">+1 5589 55488 55</span>
                                 </div>
                                 <div class="d-flex align-items-center gap-2">
                                     <i class="fa-solid fa-clock fs-4"></i>
-                                    <span>Mon-Sat: 11:00 AM - 23:00 PM</span>
+                                    <span class="text-primary-custom">Mon-Sat: 11:00 AM - 23:00 PM</span>
                                 </div>
                             </div>
                         </div>
@@ -37,45 +38,49 @@
             </div>
         </div>
     </header>
+    <!-- Top Nav End -->
 
-
-    <div class="container-fluid customNav">
+    <!-- Navbar Start -->
+    <div class="container-fluid customNav mt-lg-2 mt-0 bg-primary-custom">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ">
-                    <nav class="navbar navbar-expand-lg customNavbar">
-                        <a href="#home" class="navbar-brand fs-2">Delicious</a>
+                    <nav class="navbar navbar-expand-lg customNavbar ">
+                        <a href="#home" class="navbar-brand fs-2 text-white">Delicious</a>
 
+                        <!-- Navbar Toggler -->
                         <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav-home">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
+                        <!-- Desktop Navbar -->
                         <div class="d-lg-block d-none ms-auto">
-                            <ul class="nav navbar-nav gap-3"> <!--border border-5-->
+                            <ul class="nav navbar-nav gap-3">
                                 <li class="nav-item">
-                                    <a class="nav-link icon-link icon-link-hover" href="index.html">Home</a>
+                                    <a class="nav-link icon-link icon-link-hover text-primary-custom"
+                                        href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="About.html">About</a>
+                                    <a class="nav-link text-white" href="About.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Menu.html">Menu</a>
+                                    <a class="nav-link text-white" href="Menu.html">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Special.html">Specials</a>
+                                    <a class="nav-link text-white" href="Special.html">Specials</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Chef.html">Chef</a>
+                                    <a class="nav-link text-white" href="Chef.html">Chef</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Gallery.html">Gallery</a>
+                                    <a class="nav-link text-white" href="Gallery.html">Gallery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Contact.html">Contact</a>
+                                    <a class="nav-link text-white" href="Contact.html">Contact</a>
                                 </li>
                                 <li>
                                     <a href="BookTable.html" class="text-decoration-none">
-                                        <button class="btn btn-warning rounded-pill px-3">
+                                        <button class="btn btn-warning text-white rounded-pill px-3 btn-book">
                                             Book A Table
                                         </button>
                                     </a>
@@ -84,53 +89,52 @@
                         </div>
                         <!-- Desktop Navbar End -->
 
-                        <!-- Mobile Navbar Offcanvas Start-->
-
-                        <div class="offcanvas offcanvas-end d-lg-none d-block" id="nav-home" data-bs-backdrop="false">
+                        <!-- Mobile Navbar Offcanvas -->
+                        <div class="offcanvas offcanvas-end offcanvas-custom d-lg-none d-block" id="nav-home">
                             <div class="offcanvas-header">
-                                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                <button class="btn-close text-white" data-bs-dismiss="offcanvas"></button>
                             </div>
 
-                            <div class="offcanvas-body bg-warning">
-                                <ul class="nav navbar-nav text-start gap-3">
+                            <div class="offcanvas-body bg-primary-custom">
+                                <ul class="nav navbar-nav text-start gap-3 ">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link">Home</a>
+                                        <a href="index.html" class="nav-link text-white">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="About.html" class="nav-link">About</a>
+                                        <a href="About.html" class="nav-link text-white">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Menu.html" class="nav-link">Menu</a>
+                                        <a href="Menu.html" class="nav-link text-white">Menu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Special.html" class="nav-link">Special</a>
+                                        <a href="Special.html" class="nav-link text-white">Special</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Chef.html" class="nav-link">Chef</a>
+                                        <a href="Chef.html" class="nav-link text-white">Chef</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Gallery.html" class="nav-link">Gallery</a>
+                                        <a href="Gallery.html" class="nav-link text-white">Gallery</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Contact.html" class="nav-link">Contact</a>
+                                        <a href="Contact.html" class="nav-link text-white">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <!-- Mobile Navbar End -->
                     </nav>
-                    <!-- Mobile Navbar End -->
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- Navbar End -->
 
 
     <!-- Carousel Area Start ==============================================-->
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 ">
+            <div class="col-lg-12 p-0">
 
                 <div class="carousel slide" data-bs-ride="carousel" id="abc">
                     <div class="carousel-indicators">
@@ -142,82 +146,72 @@
                             aria-label="Slide 3"></button>
                     </div>
 
-                    <div class="carousel-inner  ">
+                    <!-- 1st -->
+                    <div class="carousel-inner">
                         <div class="carousel-item active top-carousel"
-                            style="background-image: url(../Icon&photo/slide-1.jpg);" data-bs-interval="2000">
+                            style="background-image: url(./Icon&photo/carousel-image-3.png);" data-bs-interval="2000">
                             <div class="carousel-container">
                                 <div class="carousel-content">
                                     <h2 class="mb-3 fs-1">
-                                        <span>Delicious</span>
-                                        Restaurant
+                                        <span>Welcome to</span> <br>
+                                        Delicious Restaurant
                                     </h2>
-                                    <p>Ut velit est quam
-                                        dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat
-                                        sequi nihil ut aliquam. <br> Occaecati alias dolorem mollitia ut.
-                                        Similique ea voluptatem. Esse doloremque accusamus
-                                        repellendus deleniti vel. Minus et tempore modi architecto.
+                                    <p>Experience the taste of perfection with our carefully crafted dishes made from
+                                        the freshest ingredients.
                                     </p>
-
-                                    <div class="mt-4">
-                                        <a class="btn btn-outline-warning  me-2 btn-lg rounded-pill"
-                                            href="Menu.html">Our
-                                            Menu</a>
-                                        <a class="btn btn-outline-warning btn-lg rounded-pill mt-2 mt-md-0 mt-lg-0"
-                                            href="BookTable.html">Book A
-                                            Table</a>
+                                    <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
+                                        <a class="btn btn-outline-warning rounded-pill px-4 py-2"
+                                            href="Menu.html">Explore Menu</a>
+                                        <a class="btn btn-outline-warning rounded-pill px-4 py-2"
+                                            href="BookTable.html">Reserve a Table</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="carousel-item  top-carousel"
-                            style="background-image: url(../Icon&photo/slide-2.jpg);" data-bs-interval="2000">
-                            <div class="carousel-container">
-                                <div class="carousel-content">
-                                    <h2 class="mb-3 fs-1">
-                                        Lorem Ipsum Dolor
-                                    </h2>
-                                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
-                                        et est quaerat sequi nihil ut aliquam. <br> Occaecati alias
-                                        dolorem mollitia ut. Similique ea voluptatem. Esse
-                                        doloremque accusamus repellendus deleniti vel. Minus et
-                                        tempore modi architecto.</p>
-                                    <div class="btn2 mt-4">
-                                        <a class="btn btn-outline-warning me-2 btn-lg rounded-pill" href="Menu.html">Our
-                                            Menu</a>
-                                        <a class="btn btn-outline-warning mt-2  btn-lg rounded-pill mt-md-0  mt-lg-0"
-                                            href="BookTable.html">Book A
-                                            Table</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <!-- 2nd -->
                         <div class="carousel-item top-carousel"
-                            style="background-image: url(../Icon&photo/slide-3.jpg);" data-bs-interval="2000">
+                            style="background-image: url(./Icon&photo/carousel-image-2.png);" data-bs-interval="2000">
                             <div class="carousel-container">
                                 <div class="carousel-content">
                                     <h2 class="mb-3 fs-1">
-                                        Sequi ea ut et est quaerat
+                                        Experience <br> Dining Like Never Before
                                     </h2>
-                                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
-                                        et est quaerat sequi nihil ut aliquam. <br> Occaecati alias
-                                        dolorem mollitia ut. Similique ea voluptatem. Esse
-                                        doloremque accusamus repellendus deleniti vel. Minus et
-                                        tempore modi architecto.</p>
-                                    <div class=" mt-4">
-                                        <a class="btn btn-outline-warning me-2 btn-lg rounded-pill "
-                                            href="Menu.html">Our
+                                    <p> Discover a warm and inviting atmosphere, filled with delicious aromas and
+                                        friendly smiles.
+                                    </p>
+                                    <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
+                                        <a class="btn btn-outline-warning rounded-pill px-4 py-2" href="Menu.html">View
                                             Menu</a>
-                                        <a class="btn btn-outline-warning mt-2 btn-lg rounded-pill mt-md-0 mt-lg-0"
-                                            href="BookTable.html">Book
-                                            A Table</a>
+                                        <a class="btn btn-outline-warning rounded-pill px-4 py-2"
+                                            href="BookTable.html">Reserve a Table</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd -->
+                        <div class="carousel-item top-carousel"
+                            style="background-image: url(./Icon&photo/Carousel-image-3rd.png);" data-bs-interval="2000">
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2 class="mb-3 fs-1">
+                                        A Perfect <br> Place for Every Occasion
+                                    </h2>
+                                    <p> Whether it's a family dinner, a romantic date, or a celebration with friends.
+                                    </p>
+                                    <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
+                                        <a class="btn btn-outline-warning rounded-pill px-4 py-2" href="Menu.html">View
+                                            Our Menu</a>
+                                        <a class="btn btn-outline-warning rounded-pill px-4 py-2"
+                                            href="BookTable.html">Book Your Table</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- buttons -->
                     <button data-bs-slide="prev" type="button" data-bs-target="#abc" class="carousel-control-prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -232,249 +226,208 @@
         </div>
     </div>
 
+    <!-- Carousel Area End -->
+
 
     <!-- Main Area Start Here ===============================================-->
 
     <main>
-        <div class="container-fluid mt-5">
-            <div class="container">
-                <div class="row rows">
-                    <div class="col-lg-6 d-flex align-items-stretch">
-                        <div class="about-video  w-100">
-                            <iframe class="w-100 h-100" style="background-position: center; "
-                                src="https://www.youtube.com/embed/_dui6BUmMBg?si=PLOQFr32ce6AyI3u"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4 mt-lg-0 d-flex align-items-stretch"
-                        style="background-color: rgb(14,25,39);">
-                        <div class="about-content px-3 py-5 text-white ">
-                            <h2>Eum ipsam laborum deleniti <span style="color: grey;">velit pariatur
-                                    architecto
-                                    aut nihil</span></h2>
-                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Duis aute irure
-                                dolor in
-                                reprehenderit </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-
-
-                            <ol type="A">
-                                <li class="mb-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </li>
-                                <li class="mb-2">Duis aute irure dolor in reprehenderit in voluptate velit.
-                                </li>
-                                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure
-                                    dolor in reprehenderit in voluptate trideta storacalaperda
-                                    mastiro
-                                    dolore eu fugiat nulla pariatur.</li>
-                            </ol>
-
-                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure
-                                dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui
-                                officia deserunt mollit anim id est laborum</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
         <!-- Why Choose Area Start ====================================================== -->
 
-        <div class="container">
-            <div class="row mt-5">
+        <!-- Heading Area -->
+        <div class="container mt-5">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="why-choose mx-auto">
-                        <h2 class="text-center fs-1">Why Choose <span style="color:rgb(255,176,59);">Our
-                                Restaurant</span>
+                        <h2 class="text-center fs-1 fw-bold">
+                            Why Choose <span class="text-primary-custom">Our Restaurant</span>
                         </h2>
-                        <p class="mt-4 text-center">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
-                            adipisci <br> expedita at voluptas atque vitae autem.</p>
+                        <p class="mt-4 text-center">
+                            Discover what makes us special — from irresistible flavors to warm hospitality.
+                            <br> Because at <strong class="text-danger-custom">Delicious Restaurant</strong>, every meal
+                            is a reason to smile!
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <!-- Cards area -->
+        <div class="container mb-5">
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <div class="box1 shadow px-4 py-5 rounded">
+                    <div class="box1 shadow-lg px-4 py-5 rounded-3">
                         <h5>01</h5>
-                        <h3>Lorem ipsum.</h3>
-                        <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur
-                            ducimus vero placeat</p>
+                        <h3>Exceptional Food Quality</h3>
+                        <p>We serve only the finest and freshest ingredients, crafted with passion to deliver
+                            unforgettable flavors. Every dish is a reflection of our dedication to excellence.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-3 mt-lg-0">
-                    <div class="box2 shadow px-4 py-5 rounded">
+                    <div class="box2 shadow-lg px-4 py-5 rounded-3">
                         <h5>02</h5>
-                        <h3>Repellat Nihil</h3>
-                        <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor
-                            quod et vel dire leno para dest</p>
+                        <h3>Modern, Comfortable Setting</h3>
+                        <p> Enjoy a welcoming atmosphere perfect for family dinners, casual meetups, or romantic
+                            evenings. Comfort and elegance meet to create a space you’ll love to visit.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-3 mt-lg-0">
-                    <div class="box3 shadow px-4 py-5 rounded">
+                    <div class="box3 shadow-lg px-4 py-5 rounded-3">
                         <h5>03</h5>
-                        <h3>Ad ad velit qui</h3>
-                        <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt
-                            debitis quo vel nam quis</p>
+                        <h3>Outstanding Service</h3>
+                        <p> Our friendly and professional team is committed to making your dining experience smooth and
+                            delightful. Your satisfaction is our top priority — always.</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Why Choose Area End ================================================= -->
 
+        <!-- Blog Section -->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row rows">
+                    <div class="col-lg-12 mx-auto mt-4 mt-lg-0 d-flex align-items-stretch shadow-lg rounded-2">
+                        <div class="about-content px-3 py-5 ">
+                            <h2 style="color: #6D071A;">More Than a Meal, <span class="text-primary-custom">It’s an
+                                    Experience You’ll Love</span></h2>
+                            <p class="mt-3">Every great meal starts with a story — and ours begins with a simple belief:
+                                good food brings people together.
+                                At Delicious Restaurant, we blend fresh ingredients, rich flavors, and creative touches
+                                to serve dishes that feel like home but taste extraordinary. </p>
+                            <p>
+                                From the moment you walk through our doors, our goal is to make you feel welcome.
+                                Whether you're here for a casual lunch or an evening celebration, we’re here to make it
+                                special.
+                            </p>
 
-        <!-- Menu Area Start ===================================================== -->
 
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-lg-12">
-                    <div class="check-menu mt-5">
-                        <h3 class="text-center fs-1">Chech Our Tasty <span style="color: rgb(255,176,59);">Menu</span>
-                        </h3>
+                            <ol type="A">
+                                <li class="mb-2">Locally sourced produce and hand-picked ingredients for unbeatable
+                                    freshness.
+                                </li>
+                                <li class="mb-2">A cozy, elegant atmosphere designed for every occasion — from date
+                                    nights to family dinners.
+                                </li>
+                                <li>Friendly service that treats every guest like family, because great food deserves
+                                    great hospitality.</li>
+                            </ol>
+
+                            <p>So, if you're searching for a place where flavor meets comfort, where every meal is made
+                                with love —
+                                Delicious Restaurant is ready to welcome you. Come hungry, leave happy.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Blog Section End -->
 
+
+        <!-- Menu Area Start  -->
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fs-1 fw-bold ">
+                        Explore Our <span class="text-primary-custom">Delicious Menu</span>
+                    </h2>
+                    <p class="mt-2 text-muted fs-5">
+                        Taste the rich flavors of India, crafted with love and tradition from every corner of our
+                        vibrant culture.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1st -->
         <div class="container">
             <div class="row mt-4">
                 <div class="col-lg-4 text-center text-md-center text-lg-start">
                     <ul class="list-unstyled ">
                         <li>
-                            <h5><span class="text-warning">Lobster
-                                    Bisque</span>..................................
-                                $5.95</h5>
-                            <h6 class="text-secondary fw-lighter">Lorem, deren, trataro, filede, nerada</h6>
+                            <h5><span class="text-danger-custom">Amritsari Kulcha</span> — ₹249</h5>
+                            <p class="text-muted small">Stuffed naan with spicy potato filling, served with chole.
+                                (Punjab)</p>
                         </li>
 
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Crab
-                                    Cake</span>.............................
-                                $7.95</h5>
-                            <h6 class="text-secondary fw-lighter">A delicate crab cake served on a toasted roll
-                                with lettuce and tartar sauce</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Chole Bhature</span> — ₹199</h5>
+                            <p class="text-muted small">Spiced chickpeas served with fluffy fried bread. (Delhi/Agra)
+                            </p>
                         </li>
-
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Tuscan
-                                    Grilled</span>........................
-                                $9.95</h5>
-                            <h6 class="text-secondary fw-light">Grilled chicken with provolone, artichoke
-                                hearts, and roasted red pesto</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Rajasthani Dal Baati Churma</span> — ₹349</h5>
+                            <p class="text-muted small">Traditional baked wheat balls, served with spicy dal and sweet
+                                churma. (Rajasthan)</p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Greek
-                                    Salad</span>.........................
-                                $9.95</h5>
-                            <h6 class="text-secondary fw-lighter">Fresh spinach, crisp romaine, tomatoes, and
-                                Greek olives</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Kashmiri Rogan Josh</span> — ₹449</h5>
+                            <p class="text-muted small">Tender lamb cooked in aromatic Kashmiri spices. (Kashmir)</p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Lobster
-                                    Roll</span>.............................
-                                $12.95</h5>
-                            <h6 class="text-secondary fw-lighter">Plump lobster meat, mayo and crisp lettuce on
-                                a toasted bulky roll</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Gujrati Dhokla</span> — ₹149</h5>
+                            <p class="text-muted small">Soft & spongy savory cake made from fermented rice & chickpea
+                                flour. (Gujarat)</p>
                         </li>
                     </ul>
                 </div>
 
+                <!-- 2nd -->
                 <div class="col-lg-4 text-center text-md-center text-lg-start">
                     <ul class="list-unstyled">
                         <li>
-                            <h5><span class="text-warning">Bread
-                                    barrel</span>......................
-                                $6.95</h5>
-                            <h6 class="text-secondary fw-lighter">Lorem, deren, trataro, filede, nerada</h6>
+                            <h5><span class="text-danger-custom">Amritsari Kulcha</span> — ₹249</h5>
+                            <p class="text-muted small">Stuffed naan with spicy potato filling, served with chole.
+                                (Punjab)</p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Caesar
-                                    Selections</span>......................
-                                $8.95</h5>
-                            <h6 class="text-secondary fw-lighter">Lorem, deren, trataro, filede, nerada</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Butter Chicken</span> — ₹399</h5>
+                            <p class="text-muted small">Classic Punjabi-style chicken in buttery tomato sauce. (Punjab)
+                            </p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Mozzarella
-                                    Stick</span>...........................$4.95
-                            </h5>
-                            <h6 class="text-secondary fw-lighter">Lorem, deren, trataro, filede, nerada</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Pav Bhaji</span> — ₹189</h5>
+                            <p class="text-muted small">Mumbai's famous mashed vegetable curry served with buttered
+                                buns. (Mumbai)</p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Spinach
-                                    Salad</span>..........................................$9.95
-                            </h5>
-                            <h6 class="text-secondary fw-lighter">Fresh spinach with mushrooms, hard boiled egg,
-                                and warm bacon vinaigrette</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Matar Kachori</span> — ₹129</h5>
+                            <p class="text-muted small">Crispy stuffed puri with spicy green peas. (Agra)</p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Bruschetta</span>..........................$91.45
-                            </h5>
-                            <h6 class="text-secondary fw-lighter">Fresh mushrooms,
-                                and warm bacon vinaigrette</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Aloo Tikki Chaat</span> — ₹149</h5>
+                            <p class="text-muted small">Crispy potato patties topped with chutneys & yogurt. (Delhi)</p>
                         </li>
                     </ul>
                 </div>
 
+                <!-- 3rd -->
                 <div class="col-lg-4 text-center text-md-center text-lg-start">
                     <ul class="list-unstyled">
                         <li>
-                            <h5><span class="text-warning">Grilled Chicken Alfredo</span>......................
-                                $6.95</h5>
-                            <h6 class="text-secondary fw-lighter">Chicken breast, fettuccine, Alfredo sauce, Parmesan
-                            </h6>
+                            <h5><span class="text-danger-custom">Chicken Biryani</span> — ₹349</h5>
+                            <p class="text-muted small">Aromatic basmati rice cooked with spiced chicken. (Hyderabad)
+                            </p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Vegetable Stir Fry </span>......................
-                                $14.29</h5>
-                            <h6 class="text-secondary fw-lighter">Broccoli, bell peppers, carrots, soy sauce, tofu</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Rajma Chawal</span> — ₹199</h5>
+                            <p class="text-muted small">Red kidney beans curry served with steamed rice. (Punjab)</p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Salmon
-                                    Teriyaki</span>.............................$4.95
-                            </h5>
-                            <h6 class="text-secondary fw-lighter">Salmon fillet, teriyaki sauce, sesame seeds, rice</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Mango Lassi</span> — ₹99</h5>
+                            <p class="text-muted small">Refreshing yogurt-based mango drink. (Punjab)</p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Tiramisu</span>......................$9.95
-                            </h5>
-                            <h6 class="text-secondary fw-lighter">Mascarpone, espresso, ladyfingers, cocoa powder</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Gulab Jamun</span> — ₹129</h5>
+                            <p class="text-muted small">Milk-solid-based sweet soaked in rose-flavored syrup. (All
+                                India)</p>
                         </li>
-
-                        <li class="mt-3 mt-lg-4">
-                            <h5><span class="text-warning">Garlic Butter
-                                    Shrimp</span>..................................$19.92
-                            </h5>
-                            <h6 class="text-secondary fw-lighter">Shrimp, garlic, butter, lemon, parsley</h6>
+                        <li class="mt-4">
+                            <h5><span class="text-danger-custom">Rasmalai</span> — ₹159</h5>
+                            <p class="text-muted small">Soft paneer balls soaked in creamy saffron milk. (Bengal)</p>
                         </li>
                     </ul>
                 </div>
@@ -483,268 +436,102 @@
         <!-- Menu Area End Here ============================================================== -->
 
 
-        <!-- Special Area Start Start ======================================================= -->
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-lg-12">
-                    <div class="check-specials">
-                        <div class="special text-center ">
-                            <h3 class="text-center fs-1">Check Our <span style="color:rgb(255,176,59) ;">Specials</span>
-                            </h3>
-                            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at
-                                <br>
-                                voluptas atque vitae autem.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Dishes Area Start ======================================================= -->
+
+        <div class="container py-5">
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="font-size: 2.8rem;">Signature <span class="text-primary-custom">Dishes</span>
+                </h2>
+                </h3>
+                <p>Explore the rich flavors of India with our specially curated dishes, crafted by expert
+                    chefs to give you an unforgettable dining experience.
+                    <br>From spicy street food to royal Mughlai delights, every bite is a celebration of
+                    taste.
+                </p>
             </div>
-        </div>
 
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row mt-4">
-                    <div class="col-lg-6">
-                        <div class="shadow rounded-2 text-center px-3 py-4">
-                            <div>
-                                <h3>Modi sit est</h3>
-                            </div>
-
-                            <div>
-                                <h3>Architecto ut aperiam autem id</h3>
-                                <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
-                                    videna mareta paulona marka Et nobis maiores eius. Voluptatibus ut enim blanditiis
-                                    atque
-                                    harum sint. Laborum
-                                    eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat
-                                    minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui
-                                    similique accusamus nostrum rem vero </p>
-                            </div>
-
-                            <div>
-                                <img class="img-fluid" src="../Icon&photo/Plate.png" alt="Food On Plate" width="20%">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="shadow rounded-2 px-3 py-4 text-center mt-4 mt-lg-0">
-                            <div>
-                                <h3>Unde praesentium sed</h3>
-                            </div>
-
-                            <div>
-                                <h3>Et blanditiis nemo veritatis excepturi</h3>
-                                Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
-                                videna mareta paulona marka Ea ipsum voluptatem consequatur quis est. Illum error ullam
-                                omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et
-                                velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna
-                                desera vafle de nideran pal</p>
-                            </div>
-
-                            <div>
-                                <img class="img-fluid" src="../Icon&photo/veg plate.jpg" alt="Food On Plate"
-                                    width="20%">
+            <!-- Dishes Cards Row -->
+            <div class="row g-4">
+                <!-- Dish 1 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                        <img src="../Icon&photo/biryani.jpg" class="card-img-top" alt="Hyderabadi Biryani"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h4 class="fw-semibold">Hyderabadi Biryani</h4>
+                            <p class="text-muted small">Authentic dum-cooked biryani layered with flavorful basmati
+                                rice, marinated spices, and tender chicken.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold" style="color: #E94E1B;">₹399</span>
+                                <a href="BookTable.html">
+                                    <button class="btn btn-outline-dark rounded-pill px-3 py-1">Order Now</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Special Area End Here ================================================================ -->
 
+                <!-- Dish 2 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                        <img src="../Icon&photo/butterchicken.jpg" class="card-img-top" alt="Butter Chicken"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h4 class="fw-semibold">Butter Chicken</h4>
+                            <p class="text-muted small">Rich and creamy butter chicken, cooked in tomato and cashew
+                                gravy, topped with fresh cream.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold" style="color: #E94E1B;">₹449</span>
+                                <a href="BookTable.html">
+                                    <button class="btn btn-outline-dark rounded-pill px-3 py-1">Order Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 2nd carousel Start Here ===================================================== -->
+                <!-- Dish 3 -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                        <img src="../Icon&photo/malai-kofta.jpg" class="card-img-top" alt="Malai Kofta"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h4 class="fw-semibold">Malai Kofta</h4>
+                            <p class="text-muted small">Delicate paneer and potato koftas in a luscious creamy gravy,
+                                perfect with naan or rice.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold" style="color: #E94E1B;">₹379</span>
+                                <a href="BookTable.html">
+                                    <button class="btn btn-outline-dark rounded-pill px-3 py-1">Order Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="container-fluid mt-5 df justify-content-center align-items-center" style="height: 100vh;">
-            <div class="bg-img">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
-                                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
-                                        aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
-                                        aria-label="Slide 3"></button>
-                                </div>
-
-                                <!-- 1st -->
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class=" row align-items-center mt-4 justify-content-center ">
-                                            <div class="col-lg-6 text-center text-lg-start">
-                                                <img class="img-fluid rounded" src="../Icon&photo/event-birthday.jpg"
-                                                    alt="Birthday Party">
-                                            </div>
-
-                                            <div class="col-lg-6 d-flex align-items-center">
-                                                <div class="birthday-content text-white p-4 w-100">
-                                                    <h5 class="text-warning">Birthday Parties</h5>
-                                                    <a class=" text-decoration-underline  fs-4" href="#">$189</a>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                                                        officiis
-                                                        non voluptatum cum facilis, porro maiores temporibus voluptates,
-                                                        quasi
-                                                        suscipit quibusdam. Recusandae, est molestiae neque, veniam non
-                                                        cumque
-                                                        id eligendi dignissimos, laboriosam quis aut repellat! Beatae
-                                                        ducimus
-                                                        repudiandae consequatur nemo?</p>
-                                                    <ul class="list-unstyled">
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                    </ul>
-                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                                        Reprehenderit
-                                                        alias totam illo vero distinctio, quam reiciendis earum. Ducimus
-                                                        corporis error magni quos?</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- 2nd -->
-                                    <div class="carousel-item">
-                                        <div class="row align-items-center mt-4 justify-content-center">
-                                            <div class="col-lg-6 text-center text-lg-start">
-                                                <img class="img-fluid rounded" src="../Icon&photo/event-private.jpg"
-                                                    alt="Private Party">
-                                            </div>
-                                            <div class="col-lg-6 d-flex align-items-center">
-                                                <div class="birthday-content text-white p-4 w-100">
-                                                    <h5 class="text-warning">Private Parties</h5>
-                                                    <a class=" text-decoration-underline  fs-4" href="#">$444</a>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                                                        officiis
-                                                        non voluptatum cum facilis, porro maiores temporibus voluptates,
-                                                        quasi
-                                                        suscipit quibusdam. Recusandae, est molestiae neque, veniam non
-                                                        cumque
-                                                        id eligendi dignissimos, laboriosam quis aut repellat! Beatae
-                                                        ducimus
-                                                        repudiandae consequatur nemo?</p>
-                                                    <ul class="list-unstyled">
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                    </ul>
-                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                                        Reprehenderit
-                                                        alias totam illo vero distinctio, quam reiciendis earum. Ducimus
-                                                        corporis error magni quos?</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- 3rd -->
-                                    <div class="carousel-item">
-                                        <div class="row align-items-center mt-4 justify-content-center">
-                                            <div class="col-lg-6 text-center text-lg-start">
-                                                <img class="img-fluid rounded" src="../Icon&photo/event-custom.jpg"
-                                                    alt="Custom Party">
-                                            </div>
-
-                                            <div class="col-lg-6 d-flex align-items-center">
-                                                <div class="birthday-content text-white p-4 w-100">
-                                                    <h5 class="text-warning">Custom Parties</h5>
-                                                    <a class=" text-decoration-underline  fs-4" href="#">$299</a>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                                                        officiis
-                                                        non voluptatum cum facilis, porro maiores temporibus voluptates,
-                                                        quasi
-                                                        suscipit quibusdam. Recusandae, est molestiae neque, veniam non
-                                                        cumque
-                                                        id eligendi dignissimos, laboriosam quis aut repellat! Beatae
-                                                        ducimus
-                                                        repudiandae consequatur nemo?</p>
-                                                    <ul class="list-unstyled">
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-solid fa-check-double text-warning"></i>
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Sunt odit
-                                                            dolores aliquam?
-                                                        </li>
-                                                    </ul>
-                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                                        Reprehenderit
-                                                        alias totam illo vero distinctio, quam reiciendis earum. Ducimus
-                                                        corporis error magni quos?</p>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                <!-- 4th -->
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-lg rounded-4 overflow-hidden">
+                        <img src="./Icon&photo/amritsar-culcha.jpg" class="card-img-top" alt="Malai Kofta"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h4 class="fw-semibold">Amritsari Kulcha</h4>
+                            <p class="text-muted small">Crispy, stuffed kulchas baked to perfection, served with tangy
+                                chole and fresh chutney — a taste straight from Punjab.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fw-bold" style="color: #E94E1B;">₹249</span>
+                                <a href="BookTable.html">
+                                    <button class="btn btn-outline-dark rounded-pill px-3 py-1">Order Now</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Dishes Area End ================================================================ -->
 
-        <!-- 2nd carousel End Here ===================================================== -->
 
         <!-- Gallery/Photos Area Start Here ================================================ -->
 
@@ -754,7 +541,7 @@
 
                     <div class="gallery mt-5">
                         <div class="gallery-title text-center">
-                            <h4 class="fs-1"> Some Photos From <span style="color: rgb(255,176,59);">Our
+                            <h4 class="fs-1 fw-bold"> Some Photos From <span class="text-primary-custom">Our
                                     Restaurant </span></h4>
                             <p>Ut possimus qui ut temporibus culpa velit eveniet modi
                                 omnis
@@ -800,178 +587,116 @@
 
 
         <!-- Professional Chef Area Start =============================================== -->
+        <section class="container-fluid">
+            <div class="container py-5 text-center">
+                <h2 class="fs-1 fw-bold">Meet Our <span class="text-primary-custom">Master Chef</span></h2>
+                <p class="lead">Crafting authentic Indian flavors with a touch of tradition and innovation.</p>
 
-        <div class="container-fluid mt-5 box"
-            style=" background: url(https://images.unsplash.com/photo-1595174033318-ff6ebd6f77f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D); background-size: cover; background-position: center; background-clip: border-box; background-attachment: fixed;">
-            <div class="container text-white">
-                <div class="row">
-                    <div class="col-lg-12 mt-5">
-                        <div class="chef-title text-center">
-                            <h3 class="fs-1">Our Professional <span style="color:rgb(255,176,59) ;">Chef</span>
-                            </h3>
-                            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita <br>
-                                at
-                                voluptas atque vitae autem.</p>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="chef-card text-center text-white p-4 rounded shadow"
+                            style="background-color: #6D071A;;">
+                            <img src="./Icon&photo/chef-vikas.jpg" class="img-fluid " alt="Chef">
+                            <h4 class="mt-3 text-warning">Chef Vikas Khanna</h4>
+                            <p>Michelin-starred chef, author, and master of North Indian cuisine.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                        <div class="chef-card text-center text-white p-4 rounded shadow"
+                            style="background-color: #6D071A;">
+                            <img src="./Icon&photo/chef-sanjeev.jpg" class="img-fluid" alt="Chef">
+                            <h4 class="mt-3 text-warning">Chef Sanjeev Kapoor</h4>
+                            <p>India’s beloved chef, bringing the magic of spices to your plate.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                        <div class="chef-card text-center text-white p-4 rounded shadow"
+                            style="background-color: #6D071A;">
+                            <img src="./Icon&photo/chef-ranveer.jpg" class="img-fluid" alt="Chef">
+                            <h4 class="mt-3 text-warning">Chef Ranveer </h4>
+                            <p>Renowned for his innovative take on Indian cuisine.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="chef-images mb-5 ">
-                            <div class="row mt-4">
-                                <div class="col-lg-4 col-md-6">
-                                    <img src="../Icon&photo/chefs-1.jpg" class="img-fluid rounded-pill shadow"
-                                        width="100%" alt="">
-                                    <div class="mt-3 text-center text-white ">
-                                        <h5 class="fs-2">Walter White</h5>
-                                        <h6>Master Chef</h6>
-                                        <a class="text-white" href="https://x.com/?mx=2" target="_blank">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                                    <img src="../Icon&photo/chefs-2.jpg" class="img-fluid rounded-pill" width="100%"
-                                        alt="">
-                                    <div class="text-center mt-3 text-white">
-                                        <h5 class="fs-2">Sarah Jhonson</h5>
-                                        <h6>Patissier</h6>
-                                        <a class="text-white" href="https://x.com/?mx=2" target="_blank">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 ">
-                                    <img src="../Icon&photo/chefs-3.jpg" class="img-fluid rounded-pill" width="100%"
-                                        alt="">
-                                    <div class="text-center text-white mt-3">
-                                        <h5 class="fs-2">William Anderson</h5>
-                                        <h6>Cook</h6>
-                                        <a class="text-white" href="https://x.com/?mx=2" target="_blank">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-
-                                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <!-- Professional Chef Area End =============================================== -->
     </main>
 
     <!-- Footer Area Start ============================================================= -->
 
-    <footer class="" style="background-color: rgb(14,25,39);" id="Contact">
-        <div class="container p-4">
+    <footer class="mt-3" style="background-color: #1B1B1B; color: white; padding: 40px 0;" id="Contact">
+        <div class="container">
             <div class="row text-white">
-                <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
-                    <i class="fa-solid fa-location-dot fs-2 text-warning    "></i>
+                <!-- Address -->
+                <div class="col-lg-3 d-flex align-items-center">
+                    <i class="fa-solid fa-map-marker-alt fs-2 text-warning"></i>
                     <div class="ms-3">
-                        <h4>Address</h4>
-                        <p> A108 Adam Street <br>New York, NY 53087</p>
+                        <h4>Our Location</h4>
+                        <p> Connaught Place, New Delhi <br> India - 110001</p>
                     </div>
                 </div>
 
-                <div class="col-lg-3 d-flex align-items-center justify-content-lg-start justify-content-center">
+                <!-- Contact Info -->
+                <div class="col-lg-3 d-flex align-items-center">
                     <i class="fa-solid fa-phone fs-2 text-warning"></i>
                     <div class="ms-3">
-                        <h4>Contact</h4>
-                        <strong>Phone</strong>
-                        <span>+123456789</span> <br>
-
+                        <h4>Contact Us</h4>
+                        <strong>Phone:</strong>
+                        <span>+91 98765 43210</span> <br>
                         <strong>Email:</strong>
-                        <span>Info@gmail.com</span>
+                        <span>support@delicious.in</span>
                     </div>
                 </div>
 
-                <div
-                    class="col-lg-3 mt-3 mt-lg-0  d-flex align-items-center justify-content-lg-start justify-content-center">
+                <!-- Opening Hours -->
+                <div class="col-lg-3 d-flex align-items-center">
                     <i class="fa-solid fa-clock fs-2 text-warning"></i>
                     <div class="ms-3">
                         <h4>Opening Hours</h4>
-                        <strong>Mon-Sat:</strong>
-                        <span>11Am-23PM</span><br>
+                        <strong>Mon - Sat:</strong>
+                        <span>10 AM - 11 PM</span><br>
                         <strong>Sunday:</strong>
-                        <span>Close</span>
+                        <span>Closed</span>
                     </div>
                 </div>
 
-                <div
-                    class="col-lg-3 mt-3 mt-lg-0  d-flex align-items-center  justify-content-lg-start justify-content-center">
-                    <i class="fa-solid fa-user-plus fs-2 text-warning "></i>
+                <!-- Follow Us -->
+                <div class="col-lg-3 d-flex align-items-center">
+                    <i class="fa-solid fa-users fs-2 text-warning"></i>
                     <div class="ms-3">
                         <h4>Follow Us</h4>
-                        <a class=" text-white" href="https://x.com/?mx=2" target="_blank">
-                            <i class="fa-brands fa-twitter"></i>
+                        <a class="text-white text-decoration-none me-2" href="https://wa.me/919876543210"
+                            target="_blank">
+                            <i class="fa-brands fa-whatsapp fs-4"></i>
                         </a>
-
-                        <a class="text-white" href="https://www.facebook.com/" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
+                        <a class="text-white text-decoration-none me-2" href="https://www.instagram.com/"
+                            target="_blank">
+                            <i class="fa-brands fa-instagram fs-4"></i>
                         </a>
-
-                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
+                        <a class="text-white text-decoration-none me-2" href="https://www.facebook.com/"
+                            target="_blank">
+                            <i class="fa-brands fa-facebook fs-4"></i>
                         </a>
-
-                        <a class="text-white" href="https://www.linkedin.com/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
+                        <a class="text-white text-decoration-none" href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin fs-4"></i>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-            <hr>
-            <div class="row text-white">
-                <div class="col-lg-12 text-center">
-                    <h5>© Copyright Delicious All Rights Reserved <br>
-                        Designed by <span class="text-warning">Deepak</span> </h5>
+            <hr class="my-4 border-light">
+
+            <!-- Copyright Section -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <h5>© 2025 Delicious | All Rights Reserved <br>
+                        <span class="text-warning">Designed & Developed by Deepak</span>
+                    </h5>
                 </div>
             </div>
         </div>
